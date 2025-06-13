@@ -885,7 +885,7 @@ h3.my-profession {
         max-width: 100%;
     }
     .home .home-img {
-        display: none;
+        display: block;
     } 
     .about .about-content {
         display: flex;
