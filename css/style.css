@@ -895,6 +895,12 @@ h3.my-profession {
         text-align: center;
         margin-top: 20px;
     } 
+    .home .home-img {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+    }
+    
     .about .about-content {
         display: flex;
         flex-direction: column;
