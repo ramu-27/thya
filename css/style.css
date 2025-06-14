@@ -4,21 +4,22 @@
     --bg-black-50: #e8dfec;
     --text-black-900: #302e4d;
     --text-black-700: #504e70;
-}
-body.dark
-{
+}/* Body Styling */
+body {
+    line-height: 1.5;
+    font-size: 16px;
+    font-family: 'Georgia', serif;
+    overflow-x: hidden; /* ✅ Prevent horizontal scroll */
+  }
+  
+  /* Dark mode variables */
+  body.dark {
     --bg-black-900: #151515;
     --bg-black-100: #222222;
     --bg-black-50: #393939;
     --text-black-900: #ffffff;
     --text-black-700: #e9e9e9;
-}
-/* Body Styling */
-body {
-    line-height: 1.5;
-    font-size: 16px;
-    font-family: 'Georgia', serif; /* Replaced with a system font, you can change it */
-}
+  }
 
 /* Universal reset */
 * {
@@ -616,10 +617,10 @@ h3.my-profession {
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 20px;
-    width: 300px;
+    width: auto;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin: 0;
+    margin: 15px;
 }
 
 .certification-card:hover {
@@ -1016,11 +1017,15 @@ h3.my-profession {
       padding: 0;
     }
   
+    .certification-container {
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  
     .certification-card {
-      width: 100vw;
-      max-width: 100%;
+      width: calc(100% - 20px); /* Fits within screen without overflow */
       padding: 16px;
-      margin: 10px 0;
+      margin: 10px auto;
       border-radius: 10px;
       box-sizing: border-box;
       word-wrap: break-word;
