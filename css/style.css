@@ -1018,7 +1018,15 @@ h3.my-profession {
     .certification-item {
       padding: 20px;
     }
-  
+    .certification-card {
+        width: 90%;
+        margin: 10px auto;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 15px;
+        box-sizing: border-box;
+      }
+      
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
