@@ -957,11 +957,14 @@ h3.my-profession {
       
   }
   @media (max-width: 767px) {
+    .home {
+      text-align: center;
+    }
+  
     .home .home-img {
       position: relative;
       display: inline-block;
-      margin: 20px auto 0;
-      text-align: center;
+      margin-top: 20px;
     }
   
     .home .home-img::before,
