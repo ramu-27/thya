@@ -958,7 +958,7 @@ h3.my-profession {
   }
   
 
-  @media (max-width: 767px) {
+  @media (max-width: 9999px) {
     .home-img {
       position: relative;
       display: inline-block;
