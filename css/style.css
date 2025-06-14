@@ -956,12 +956,12 @@ h3.my-profession {
       }
       
   }
-  @media (max-width: 9999px) {
+  @media (max-width: 767px) {
     .home .home-img {
       position: relative;
       display: inline-block;
-      margin-top: 20px;
-      background: red; /* test background */
+      margin: 20px auto 0;
+      text-align: center;
     }
   
     .home .home-img::before,
