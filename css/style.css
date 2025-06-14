@@ -959,15 +959,22 @@ h3.my-profession {
   
 
 @media (max-width: 767px) { 
-    .home-img::before {
-        top: -5px;
-        left: -5px;
-      }
-    
-      .home-img::after {
-        bottom: -5px;
-        right: -5px;
-      }
+    .home-img::before,
+  .home-img::after {
+    width: 25px;
+    height: 25px;
+    border-width: 2px;
+  }
+
+  .home-img::before {
+    top: -2px;
+    left: -2px;
+  }
+
+  .home-img::after {
+    bottom: -2px;
+    right: -2px;
+  }
     .certification-container {
         padding: 10px;
     }
