@@ -956,20 +956,16 @@ h3.my-profession {
       }
       
   }
-  
-
   @media (max-width: 9999px) {
-    .home-img {
+    .home .home-img {
       position: relative;
       display: inline-block;
       margin-top: 20px;
-  
-      /* ✅ TEMP TEST STYLE — REMOVE after confirming it works */
-      background: red;
+      background: red; /* test background */
     }
   
-    .home-img::before,
-    .home-img::after {
+    .home .home-img::before,
+    .home .home-img::after {
       width: 20px !important;
       height: 20px !important;
       border-width: 2px !important;
@@ -978,14 +974,14 @@ h3.my-profession {
       border-color: var(--skin-color);
     }
   
-    .home-img::before {
+    .home .home-img::before {
       top: -8px !important;
       left: -8px !important;
       border-right: none;
       border-bottom: none;
     }
   
-    .home-img::after {
+    .home .home-img::after {
       bottom: -8px !important;
       right: -8px !important;
       border-left: none;
