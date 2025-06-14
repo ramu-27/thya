@@ -961,9 +961,7 @@ h3.my-profession {
   @media (max-width: 767px) {
     .home-img {
       position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      display: inline-block; /* changed from flex */
       margin-top: 20px;
     }
   
@@ -978,17 +976,24 @@ h3.my-profession {
     }
   
     .home-img::before {
-      top: 0 !important;
-      left: 0 !important;
+      top: -8px !important;   /* moved closer */
+      left: -8px !important;
       border-right: none;
       border-bottom: none;
     }
   
     .home-img::after {
-      bottom: 0 !important;
-      right: 0 !important;
+      bottom: -8px !important;  /* moved closer */
+      right: -8px !important;
       border-left: none;
       border-top: none;
+    }
+  
+    .home .home-img img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
     }
   
     .home .home-info {
@@ -1014,4 +1019,5 @@ h3.my-profession {
       max-width: 100%;
     }
   }
+  
   
