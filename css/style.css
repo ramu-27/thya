@@ -964,13 +964,13 @@ h3.my-profession {
     .home .home-img {
       position: relative;
       display: inline-block;
-      margin-top: 20px;
+      margin: 20px auto 30px;
     }
   
     .home .home-img::before,
     .home .home-img::after {
-      width: 20px !important;
-      height: 20px !important;
+      width: 16px !important;
+      height: 16px !important;
       border-width: 2px !important;
       content: '';
       position: absolute;
@@ -993,6 +993,7 @@ h3.my-profession {
   
     .home .home-img img {
       display: block;
+      width: 180px;
       max-width: 100%;
       height: auto;
       border-radius: 10px;
