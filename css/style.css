@@ -1019,11 +1019,11 @@ h3.my-profession {
       padding: 20px;
     }
     .certification-card {
-        width: 90%;
-        margin: 10px auto;
+        width: 100%;
+        padding: 16px;
+        margin: 10px 0;
         word-wrap: break-word;
         overflow-wrap: break-word;
-        padding: 15px;
         box-sizing: border-box;
       }
       
