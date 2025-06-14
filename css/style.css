@@ -958,42 +958,60 @@ h3.my-profession {
   }
   
 
-@media (max-width: 767px) { 
+  @media (max-width: 767px) {
+    .home-img {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
     .home-img::before,
     .home-img::after {
-      width: 25px !important;
-      height: 25px !important;
+      width: 20px !important;
+      height: 20px !important;
       border-width: 2px !important;
+      content: '';
+      position: absolute;
+      border-color: var(--skin-color);
     }
   
     .home-img::before {
-      top: -2px !important;
-      left: -2px !important;
+      top: 0 !important;
+      left: 0 !important;
+      border-right: none;
+      border-bottom: none;
     }
   
     .home-img::after {
-      bottom: -2px !important;
-      right: -2px !important;
+      bottom: 0 !important;
+      right: 0 !important;
+      border-left: none;
+      border-top: none;
     }
+  
+    .home .home-info {
+      padding: 15px;
+    }
+  
     .certification-container {
-        padding: 10px;
+      padding: 10px;
     }
+  
     .certification-item {
-        padding: 20px;
+      padding: 20px;
     }
+  
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .certification-card,
     .about .about-content .internship,
     .about .about-content .education,
-    .about .about-content .personal-info
-    {
-        flex: 0 0 100%;
-        max-width: 100%;
+    .about .about-content .personal-info {
+      flex: 0 0 100%;
+      max-width: 100%;
     }
-    
-    .home .home-info {
-        padding: 15px;
-    }
-}
+  }
+  
