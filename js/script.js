@@ -68,9 +68,9 @@ const navTogglerBtn = document.querySelector(".nav-toggler"),
 navTogglerBtn.addEventListener("click", () => {
     asideSectionTogglerBtn();
 });
-
 function asideSectionTogglerBtn() {
     aside.classList.toggle("open");
     navTogglerBtn.classList.toggle("open");
+    document.body.classList.toggle("open"); // ✅ Add this line
     allSection.forEach((section) => section.classList.toggle("open"));
 }
