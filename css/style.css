@@ -171,7 +171,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 10;
+    z-index: 11;
     transition: all 0.3s ease;
 }
 
@@ -1044,12 +1044,19 @@ h3.my-profession {
         word-break: break-word;
       }
       body.open .main-content,
-body.open .toggles-container {
-  display: none !important;
-}
-
-
-      
+      body.open .toggles-container {
+      display: none !important;
+      }
+  }
+  body.open::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
   }
   
   
