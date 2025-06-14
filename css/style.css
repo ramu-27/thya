@@ -964,13 +964,13 @@ h3.my-profession {
     .home .home-img {
       position: relative;
       display: inline-block;
-      margin: 20px auto 30px;
+      margin: 10px auto 20px; /* Reduced space above and below image */
     }
   
     .home .home-img::before,
     .home .home-img::after {
-      width: 16px !important;
-      height: 16px !important;
+      width: 14px !important;  /* Smaller corner brackets */
+      height: 14px !important;
       border-width: 2px !important;
       content: '';
       position: absolute;
@@ -978,14 +978,14 @@ h3.my-profession {
     }
   
     .home .home-img::before {
-      top: -8px !important;
+      top: -4px !important;    /* Reduced gap above image */
       left: -8px !important;
       border-right: none;
       border-bottom: none;
     }
   
     .home .home-img::after {
-      bottom: -8px !important;
+      bottom: -4px !important; /* Reduced gap below image */
       right: -8px !important;
       border-left: none;
       border-top: none;
