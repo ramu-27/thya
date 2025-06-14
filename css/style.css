@@ -960,7 +960,15 @@ h3.my-profession {
     .home {
       text-align: center;
     }
-  
+    
+  .intro-text {
+    font-size: 14.5px;
+    line-height: 1.7;
+    padding: 0 20px;
+    max-width: 90%;
+    margin: 10px auto;
+    text-align: justify;
+  }
     .home .home-img {
       position: relative;
       display: inline-block;
