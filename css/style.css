@@ -960,21 +960,21 @@ h3.my-profession {
 
 @media (max-width: 767px) { 
     .home-img::before,
-  .home-img::after {
-    width: 25px;
-    height: 25px;
-    border-width: 2px;
-  }
-
-  .home-img::before {
-    top: -2px;
-    left: -2px;
-  }
-
-  .home-img::after {
-    bottom: -2px;
-    right: -2px;
-  }
+    .home-img::after {
+      width: 25px !important;
+      height: 25px !important;
+      border-width: 2px !important;
+    }
+  
+    .home-img::before {
+      top: -2px !important;
+      left: -2px !important;
+    }
+  
+    .home-img::after {
+      bottom: -2px !important;
+      right: -2px !important;
+    }
     .certification-container {
         padding: 10px;
     }
@@ -992,6 +992,7 @@ h3.my-profession {
         flex: 0 0 100%;
         max-width: 100%;
     }
+    
     .home .home-info {
         padding: 15px;
     }
