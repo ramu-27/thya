@@ -959,6 +959,15 @@ h3.my-profession {
   
 
 @media (max-width: 767px) { 
+    .home-img::before {
+        top: -5px;
+        left: -5px;
+      }
+    
+      .home-img::after {
+        bottom: -5px;
+        right: -5px;
+      }
     .certification-container {
         padding: 10px;
     }
@@ -975,9 +984,6 @@ h3.my-profession {
     {
         flex: 0 0 100%;
         max-width: 100%;
-    }
-    .home .home-img {
-        display: none;
     }
     .home .home-info {
         padding: 15px;
