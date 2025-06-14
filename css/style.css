@@ -961,8 +961,11 @@ h3.my-profession {
   @media (max-width: 767px) {
     .home-img {
       position: relative;
-      display: inline-block; /* changed from flex */
+      display: inline-block;
       margin-top: 20px;
+  
+      /* ✅ TEMP TEST STYLE — REMOVE after confirming it works */
+      background: red;
     }
   
     .home-img::before,
@@ -976,14 +979,14 @@ h3.my-profession {
     }
   
     .home-img::before {
-      top: -8px !important;   /* moved closer */
+      top: -8px !important;
       left: -8px !important;
       border-right: none;
       border-bottom: none;
     }
   
     .home-img::after {
-      bottom: -8px !important;  /* moved closer */
+      bottom: -8px !important;
       right: -8px !important;
       border-left: none;
       border-top: none;
