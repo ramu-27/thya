@@ -899,7 +899,7 @@ h3.my-profession {
       max-width: 80%;
     }
     .home-img::before,
-.home-img::after {
+    .home-img::after {
     content: '';
     position: absolute;
     width: 30px;
@@ -907,14 +907,14 @@ h3.my-profession {
     border: 3px solid var(--skin-color);
 }
 
-.home-img::before {
+    .home-img::before {
     border-right: none;
     border-bottom: none;
     top: -15px;
     left: -15px;
 }
 
-.home-img::after {
+    .home-img::after {
     border-left: none;
     border-top: none;
     bottom: -15px;
